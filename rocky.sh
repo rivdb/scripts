@@ -191,6 +191,14 @@ echo > /etc/rc.local
 echo 'exit 0' >> /etc/rc.local
 printTime "Any startup scripts have been removed."
 
+clear 
+dnf install epel-release -y -q 
+printTime "Installed epel-release package"
+
+clear
+dnf install netstat -y -q
+printTime "Installed netstat"
+
 clear
 dnf install firewall-config -y -q
 firewall-config
@@ -746,6 +754,8 @@ clear
 dnf install iptables -y -q
 iptables -A INPUT -p all -s localhost  -i eth0 -j DROP
 printTime "All outside packets from internet claiming to be from loopback are denied."
+
+
 
 clear
 chmod 777 /usr/lib/systemd/system/ctrl-alt-del.target
