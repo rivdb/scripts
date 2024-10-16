@@ -1,0 +1,10 @@
+    [*] - Here's what YOU need to do next:
+        [1.] - Harden any APPROVED web browsers 
+            1) Disable pop-ups / redirects
+            2) Update it
+            3) Check download's history, saved passwords, saved profiles, etc
+                ^ investigate               ^ delete        ^ malicious???
+            
+        [2.] - Run BTOP and take a look at what's running
+                1) Jenkins, malware, anything weird???
+        [3.] - Run LinPEAS and analyze the output closely
