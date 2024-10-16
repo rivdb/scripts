@@ -196,8 +196,8 @@ dnf install epel-release -y -q
 printTime "Installed epel-release package"
 
 clear
-dnf install netstat -y -q
-printTime "Installed netstat"
+dnf install net-tools -y -q
+printTime "Installed net-tools"
 
 clear
 dnf install firewall-config -y -q
